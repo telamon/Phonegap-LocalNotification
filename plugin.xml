@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.phonegap.plugins.localnotification"
-    version="3.0.4">
+    id="se.tonyivanov.localnotification"
+    version="0.1.1">
 
     <name>Child Browser</name>
 
     <asset src="www/cordova.LocalNotification.js" target="cordova.LocalNotification.js" />    
 
-
-
     <!-- ios -->
     <platform name="ios">
-        <plugins-plist key="LocalNotification"
-                    string="LocalNotification" />
-        <header-file src="LocalNotification.h" />        
-        <source-file src="LocalNotification.m" />        
+        <!-- Cordova < 2.3 -->
+        <plugins-plist key="LocalNotification" string="LocalNotification" />
+        
+        <!-- Cordova >= 2.3 -->
+        <config-file target="config.xml" parent="plugins">
+            <plugin name="LocalNotification" value="LocalNotification"/>
+        </config-file>
+
+        <header-file src="src/ios/LocalNotification.h" />        
+        <source-file src="src/ios/LocalNotification.m" />        
     </platform>
 </plugin>
