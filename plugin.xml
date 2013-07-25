@@ -18,7 +18,7 @@
             <plugin name="LocalNotification" value="LocalNotification"/>
         </config-file>
 
-        <header-file src="LocalNotification.h" />        
-        <source-file src="LocalNotification.m" />        
+        <header-file src="src/ios/LocalNotification.h" />        
+        <source-file src="src/ios/LocalNotification.m" />        
     </platform>
 </plugin>
