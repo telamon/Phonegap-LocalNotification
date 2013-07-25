@@ -14,7 +14,7 @@
     <platform name="ios">
         <plugins-plist key="LocalNotification"
                     string="LocalNotification" />
-        <header-file src="src/LocalNotification.h" target="LocalNotification.h"/>        
-        <source-file src="src/LocalNotification.m" target="LocalNotification.m"/>        
+        <header-file src="LocalNotification.h" />        
+        <source-file src="LocalNotification.m" />        
     </platform>
 </plugin>
